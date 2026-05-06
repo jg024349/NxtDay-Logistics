@@ -64,8 +64,9 @@ body {
 }
 
 .logo-img {
-    height: 40px;
+    height: 70px;
     width: auto;
+    display: block;
 }
 
 .nav-menu {
@@ -444,8 +445,9 @@ body {
 }
 
 .logo-img-small {
-    height: 30px;
+    height: 90px;
     width: auto;
+    display: block;
 }
 
 .footer-section p {
