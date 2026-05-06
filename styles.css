@@ -37,8 +37,8 @@ body {
 
 /* Navigation Bar */
 .navbar {
-    background-color: #5b9cc3;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -51,46 +51,45 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .nav-logo {
     display: flex;
     align-items: center;
-    flex-shrink: 0;
+    gap: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--dark-gray);
 }
 
 .logo-img {
-    height: 80px;
+    height: 40px;
     width: auto;
-    display: block;
 }
 
-/* CENTER MENU */
 .nav-menu {
     display: flex;
     list-style: none;
     gap: 2rem;
-    margin-left: auto;
-    margin-right: auto;
+    flex: 1;
+    justify-content: center;
 }
 
 .nav-link {
     text-decoration: none;
-    color: white;
-    font-weight: 600;
+    color: var(--text-dark);
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-    color: #dcecf7;
+    color: var(--primary-blue);
 }
 
-/* BUTTONS FAR RIGHT */
 .nav-buttons {
     display: flex;
     gap: 1rem;
-    flex-shrink: 0;
 }
 
 .nav-btn {
@@ -104,25 +103,25 @@ body {
 }
 
 .btn-primary {
-    background-color: #1f4f73;
+    background-color: var(--primary-blue);
     color: white;
 }
 
 .btn-primary:hover {
-    background-color: #173b55;
+    background-color: #4a8ab0;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(91, 156, 195, 0.3);
 }
 
 .btn-outline {
-    background-color: white;
-    color: #5b9cc3;
-    border: 2px solid white;
+    background-color: transparent;
+    color: var(--primary-blue);
+    border: 2px solid var(--primary-blue);
 }
 
 .btn-outline:hover {
-    background-color: #dcecf7;
-    color: #1f4f73;
+    background-color: var(--primary-blue);
+    color: white;
 }
 
 .hamburger {
@@ -134,7 +133,7 @@ body {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: var(--dark-gray);
     margin: 5px 0;
     transition: 0.3s;
 }
@@ -445,9 +444,8 @@ body {
 }
 
 .logo-img-small {
-    height: 90px;
+    height: 30px;
     width: auto;
-    display: block;
 }
 
 .footer-section p {
